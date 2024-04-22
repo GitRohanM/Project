@@ -10,7 +10,4 @@
     if(!$conn) {
         die("<script>alert('Connection Failed.')</script>");
     }
-    //else {
-    //    echo "<script>alert('Connection Established.')</script>";
-    //}
 ?>

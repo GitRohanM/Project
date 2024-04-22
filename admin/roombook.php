@@ -89,12 +89,12 @@
                       <!--CheckIn-->
                       <span>
                         <label for="cin">Check-In</label>
-                        <input type="cin" type="date">
+                        <input name="cin" type="date">
                       </span>
                       <!--CheckOut-->
                       <span>
                         <label for="cout">Check-In</label>
-                        <input type="cout" type="date">
+                        <input name="cout" type="date">
                       </span>
                     </div>
                 </div>

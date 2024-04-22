@@ -70,7 +70,7 @@
 					<td><?php echo $res['finaltotal'] ?></td>
                     <td class="action">
                         <a href="invoiceprint.php?id= <?php echo $res['id']?>"><button class="btn btn-primary"><i class="fa-solid fa-print"></i>Print</button></a>
-						<a href="paymantdelete.php?id=<?php echo $res['id']?>"><button class="btn btn-danger">Delete</button></a>
+						<a href="paymentdelete.php?id=<?php echo $res['id']?>"><button class="btn btn-danger">Delete</button></a>
                     </td>
                 </tr>
                 <?php
