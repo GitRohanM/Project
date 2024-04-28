@@ -92,9 +92,6 @@
 						            ?>
                     </select>
                     <input type="text" name="Phone" placeholder="Enter your Phone No.">
-                    <!--DOB Field-->
-                    <label for="Dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="Dob" required>
                   </div>
                   <!--Divide Line-->
                   <div class="line"></div>
