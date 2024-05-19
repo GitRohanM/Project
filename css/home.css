@@ -137,7 +137,7 @@ ul li a:hover{
 }
 .room{
     position: relative;
-    top: 90px;
+    top: 120px;
     height: 400px;
     width: 100%;
 }
@@ -358,4 +358,93 @@ ul li a:hover{
     #contactus{
         padding: 0 30px;
     }
+}
+/* Contact Section */
+.contact-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    color: rgb(66, 68, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: var(--bg-text-shadow);
+}
+
+.contact-section .contact-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+    z-index: -1;
+    filter: blur(20px);
+    position: absolute;
+    z-index: -2;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: var(--bg-box-shadow);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.279);
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 36px;
+    color: rgb(66, 68, 74);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(66, 68, 74);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--bg-box-shadow);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #0040ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-btn:hover {
+    background-color: #0030cc;
+}
+
+.confirmation-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
 }

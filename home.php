@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./img/logo.png">
     <link rel="stylesheet" href="./css/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -40,7 +41,7 @@
           <li><a href="#firstsection">Home</a></li>
           <li><a href="#secondsection">Rooms</a></li>
           <li><a href="#thirdsection">Facilities</a></li>
-          <li><a href="   ">Contact Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
           <a href="./logout.php"><button class="btn btn-danger">Logout</button></a>
         </ul>
     </nav>
@@ -281,18 +282,50 @@
         </div>
       </div>
     </section>
+    
+        <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <img src="./img/image/homeanimatebg.svg" alt="Background" class="contact-background">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="confirmationMessage" class="confirmation-message"></div>
+        </div>
+    </section>
+    
 
+    <script src="script.js"></script>
+</body>
+</html>
+    
     <section id="contactus">
     <div class="social">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-solid fa-envelope"></i>
+      <a href="https://instagram.com"><i class="fa-brands fa-instagram" ></i></a>
+      <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
     <div class="createdby">
-      <h5>Developed by @Rohan Manav</h5>
+      <h5>Developed by Rohan Manav</h5>
     </div>
     </section>
+    
 </body>
+
+<script src="home.js"></script>
 <script>
 
     var bookbox = document.getElementById("guestdetailpanel");
