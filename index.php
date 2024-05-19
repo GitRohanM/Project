@@ -74,11 +74,10 @@ session_start();
                             header("Location: home.php");
                         }
                         else {
-                            echo 
-                                "<script>swal({
-                                title: 'Something Went Wrong',
+                            echo "<script> swal({
+                                title: 'Enter the Correct Details!',
                                 icon: 'error',
-                                )};
+                            });
                             </script>";
                         }
                     }
@@ -124,7 +123,7 @@ session_start();
                         }
                         else {
                             echo "<script> swal({
-                                title: 'Something Went Wrong',
+                                title: 'Enter the Correct Details!',
                                 icon: 'error',
                             });
                             </script>";
