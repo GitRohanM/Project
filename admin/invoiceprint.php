@@ -2,7 +2,6 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" type="x-icon" href="../img/logo.png">
 	<title>Invoice</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
