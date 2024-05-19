@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Apr 19, 2024 at 11:48 PM
+-- Host: 127.0.0.1
+-- Generation Time: May 19, 2024 at 11:20 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -68,8 +68,7 @@ CREATE TABLE `payment` (
 --
 
 INSERT INTO `payment` (`id`, `Name`, `Email`, `RoomType`, `Bed`, `NoofRoom`, `cin`, `cout`, `noofdays`, `roomtotal`, `bedtotal`, `meal`, `mealtotal`, `finaltotal`) VALUES
-(6, 'Rohan', 'rohanmanav6@gmail.com', 'Superior Room', 'Single', 1, '2024-04-19', '2024-04-20', 1, 3000.00, 30.00, 'Full-Board', 0.00, 3030.00),
-(7, 'Rohan', 'rohanmanav6@gmail.com', 'Family Room', 'Quad', 1, '2024-04-19', '2024-04-29', 10, 25000.00, 1000.00, 'Half-Board', 0.00, 26000.00);
+(12, 'Rohan Manav', 'rohanmanav6@gmail.com', 'Superior Room', 'Double', 2, '2024-05-19', '2024-05-20', 1, 6000.00, 60.00, 'Full-Board', 0.00, 6060.00);
 
 -- --------------------------------------------------------
 
@@ -128,6 +127,13 @@ CREATE TABLE `roombook` (
   `stat` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `roombook`
+--
+
+INSERT INTO `roombook` (`id`, `Name`, `Email`, `Country`, `Phone`, `RoomType`, `Bed`, `Meal`, `NoofRoom`, `cin`, `cout`, `nodays`, `stat`) VALUES
+(12, 'Rohan Manav', 'rohanmanav6@gmail.com', 'India', '8837711111', 'Superior Room', 'Double', 'Full-Board', '2', '2024-05-19', '2024-05-20', 1, 'Confirm');
+
 -- --------------------------------------------------------
 
 --
@@ -171,7 +177,14 @@ CREATE TABLE `staff` (
 INSERT INTO `staff` (`id`, `name`, `work`) VALUES
 (5, 'Rohan', 'Manager'),
 (6, 'Shubham Vij', 'Chef'),
-(8, 'Nikita', 'Receptionist');
+(8, 'Nikita', 'Receptionist'),
+(9, 'Veer', 'Chef'),
+(10, 'Rahul', 'Security'),
+(11, 'Vinay', 'Security'),
+(12, 'Himanshi', 'Receptionist'),
+(13, 'Poonam', 'Housekeeping'),
+(14, 'Dheeraj', 'Helper'),
+(15, 'Abhay', 'Cleaner');
 
 --
 -- Indexes for dumped tables
@@ -224,12 +237,6 @@ ALTER TABLE `emp_login`
   MODIFY `empid` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `payment`
---
-ALTER TABLE `payment`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
@@ -239,7 +246,7 @@ ALTER TABLE `room`
 -- AUTO_INCREMENT for table `roombook`
 --
 ALTER TABLE `roombook`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `signup`
@@ -251,7 +258,7 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
