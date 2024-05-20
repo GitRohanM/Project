@@ -62,10 +62,11 @@ session_start();
                 <!--user login-->
                     <?php
                     if(isset($_POST["user_login_submit"])) {
+                        $Username = $_POST["Username"] ;
                         $Email = $_POST["email"];
                         $Password = $_POST["password"];
 
-                        $sql = "SELECT * FROM `signup` WHERE Email = '$Email' AND Password =  BINARY'$Password'";
+                        $sql = "SELECT * FROM `signup` WHERE Email = '$Email' AND Username = '$Username' AND Password =  BINARY'$Password'";
                         $result = mysqli_query($conn, $sql);
 
                         if($result->num_rows > 0){
